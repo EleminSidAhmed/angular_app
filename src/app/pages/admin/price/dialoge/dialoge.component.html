@@ -1,0 +1,27 @@
+<h1 mat-dialog-title> Add Price Form </h1>
+<div mat-dialog-content>
+  <form [formGroup]="priceForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="lib" matInput placeholder="Placeholder">
+      <mat-label>Lib</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="idType" matInput placeholder="Placeholder" type="number">
+      <mat-label>Type</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="prix" matInput placeholder="Placeholder" type="number">
+      <mat-label>Price</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="addprice()">{{actionBtn}}</button>
+</div>

@@ -1,0 +1,28 @@
+
+/* Add styles for filling remaining space */
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+/* Adjust the sidenav and content area */
+.sidenav-container {
+  height: calc(100vh - 64px);
+}
+
+.body-content {
+  padding: 20px;
+}
+
+.profile-card {
+  text-align: center;
+  padding: 0 20px 10px 20px;
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.spacer {
+  flex: 1 1 auto;
+}

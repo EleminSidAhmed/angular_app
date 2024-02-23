@@ -1,35 +1,79 @@
 
+<!--<div class="container">-->
+<!--  <h2>Login</h2>-->
+<!--  <form [formGroup]="loginForm" (ngSubmit)="logiIn()">-->
+<!--    <div class="form-group">-->
+<!--      <label for="email">Email</label>-->
+<!--      <input type="email" class="form-control" id="email" [(ngModel)]="auth.userName" formControlName="email" />-->
+<!--    </div>-->
+
+<!--    <div class="form-group">-->
+<!--      <label for="password">Password</label>-->
+<!--      <input type="password" class="form-control" id="password" [(ngModel)]="auth.password" formControlName="password" />-->
+<!--    </div>-->
+
+<!--    <button type="submit" class="btn btn-primary" >Login</button>-->
+<!--    <div class="row">-->
+<!--      <app-msg-danger [msg]="'Login ou mot de passe incorrecte'" *ngIf="isLoginFailed"></app-msg-danger>-->
+<!--    </div>-->
+<!--  </form>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+
+
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form | CodingLab</title>
-<!--  <link rel="stylesheet" href="style.css">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Website Home Page</title>
+  <!-- /* coding with nick */ -->
 </head>
 <body>
-<div class="container">
-  <div class="wrapper">
-    <div class="title"><span>LAVAGE</span></div>
-    <form (ngSubmit)="userlogin()">
-      <div class="row">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="Email or UserName" [(ngModel)]="user.usernameOrEmail" required id="usernameOrEmail" name="usernameOrEmail">
-      </div>
-      <div class="row">
-        <i class="fas fa-lock"></i>
-        <input type="password" placeholder="Password" [(ngModel)]="user.password" required id="password" name="password">
-      </div>
-      <div class="pass"><a href="#">Forgot password?</a></div>
-      <div class="row button">
-        <input type="submit" value="Login">
-      </div>
-      <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
-    </form>
-  </div>
-</div>
+<div class="bgimage">
+  <div class="menu">
 
+    <div class="leftmenu">
+      <h4> NICK </h4>
+    </div>
+
+    <div class="rightmenu">
+      <ul>
+        <li id="firstlist"><a href="#">Home</a></li>
+        <li><a href="/service">Services</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">LOGIN</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div>
+    <div class="container">
+      <h2>Login</h2>
+      <div class="lemin">
+        <label >username</label>
+        <input type="text" [(ngModel)]="auth.userName" class="form-control" id="email">
+      </div>
+      <div class="lemin">
+        <label >password</label>
+        <input type="text" [(ngModel)]="auth.password"  class="form-control" id="password">
+      </div>
+      <button class="btn btn-primary"
+              (click)="logiIn()">Se connecter
+      </button>
+      <div class="row">
+        <app-msg-danger [msg]="'Login ou mot de passe incorrecte'" *ngIf="isLoginFailed"></app-msg-danger>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- /* coding with nick */ -->
 </body>
 </html>

@@ -1,0 +1,27 @@
+<h1 mat-dialog-title> Add Owner Form </h1>
+<div mat-dialog-content>
+  <form [formGroup]="ownerForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="idPrix" matInput placeholder="Placeholder" type="number">
+      <mat-label>Clothes</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="quantity" matInput placeholder="Placeholder" type="number">
+      <mat-label>Quantity</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="idUser" matInput placeholder="Placeholder" type="number">
+      <mat-label>Customer</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="addowner()">{{actionBtn}}</button>
+</div>

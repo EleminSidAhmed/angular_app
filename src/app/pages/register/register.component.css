@@ -1,0 +1,258 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');*/
+/**{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*  font-family: 'Poppins', sans-serif;*/
+/*}*/
+/*body{*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  background-image: url('https://www.francebleu.fr/s3/cruiser-production/2023/06/97155ae9-4883-443b-821b-8900b42d9281/1200x680_sc_station-lavage.jpg');*/
+/*  background-size: cover;*/
+/*}*/
+/*.wrapper{*/
+/*  position: relative;*/
+/*  max-width: 430px;*/
+/*  width: 100%;*/
+/*  background: #fff;*/
+/*  padding: 34px;*/
+/*  border-radius: 6px;*/
+/*  box-shadow: 0 5px 10px rgba(0,0,0,0.2);*/
+/*}*/
+/*.wrapper h2{*/
+/*  position: relative;*/
+/*  font-size: 22px;*/
+/*  font-weight: 600;*/
+/*  color: #333;*/
+/*}*/
+/*.wrapper h2::before{*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  bottom: 0;*/
+/*  height: 3px;*/
+/*  width: 28px;*/
+/*  border-radius: 12px;*/
+/*  background: #4070f4;*/
+/*}*/
+/*.wrapper form{*/
+/*  margin-top: 30px;*/
+/*}*/
+/*.wrapper form .input-box{*/
+/*  height: 52px;*/
+/*  margin: 18px 0;*/
+/*}*/
+/*form .input-box input{*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*  outline: none;*/
+/*  padding: 0 15px;*/
+/*  font-size: 17px;*/
+/*  font-weight: 400;*/
+/*  color: #333;*/
+/*  border: 1.5px solid #C7BEBE;*/
+/*  border-bottom-width: 2.5px;*/
+/*  border-radius: 6px;*/
+/*  transition: all 0.3s ease;*/
+/*}*/
+/*.input-box input:focus,*/
+/*.input-box input:valid{*/
+/*  border-color: #4070f4;*/
+/*}*/
+/*form .policy{*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+/*form h3{*/
+/*  color: #707070;*/
+/*  font-size: 14px;*/
+/*  font-weight: 500;*/
+/*  margin-left: 10px;*/
+/*}*/
+/*.input-box.button input{*/
+/*  color: #fff;*/
+/*  letter-spacing: 1px;*/
+/*  border: none;*/
+/*  background: #4070f4;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.input-box.button input:hover{*/
+/*  background: #0e4bf1;*/
+/*}*/
+/*form .text h3{*/
+/*  color: #333;*/
+/*  width: 100%;*/
+/*  text-align: center;*/
+/*}*/
+/*form .text h3 a{*/
+/*  color: #4070f4;*/
+/*  text-decoration: none;*/
+/*}*/
+/*form .text h3 a:hover{*/
+/*  text-decoration: underline;*/
+/*}*/
+/* register.component.scss */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  & label {
+    font-weight: bold;
+  }
+
+  & input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out;
+  }
+
+  & input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .text-danger {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* home */
+/* coding with nick */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.bgimage{
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url("/assets/i.png");
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+}
+.menu{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.leftmenu{
+  width: 20%;
+  line-height: 100Px;
+  float: left;
+}
+.leftmenu h4{
+  padding-left: 70px;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  font-family: 'montserrat', sans-serif;
+}
+.rightmenu{
+  width: 60%;
+  height: 100Px;
+  float: right;
+}
+.rightmenu ul{
+  margin-left: 200px;
+}
+.rightmenu ul li{
+  display: inline-block;
+  font-family: 'montserrat', sans-serif ;
+  list-style: none;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.rightmenu ul li:hover{
+  color: #00ccff;
+}
+#firstlist{
+  color: #00ccff;
+}
+.text{
+  width: 100%;
+  margin-top:185px ;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+}
+.text h4{
+  font-size: 14px;
+  font-family: 'open sans', sans-serif;
+}
+.text h1{
+  font-size: 62px;
+  font-family: 'montserrat', sans-serif ;
+  font-weight: 700px;
+  margin: 14px 0px;
+}
+.text h3{
+  font-size: 15px;
+  font-family: 'open sans', sans-serif;
+}
+.btn{
+  background-color: rgba(255,255,255, 0.164);
+  color: white;
+  font-family: 'montserrat', sans-serif ;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  width: 150px;
+  margin-top: 25px;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: white;
+  color: black;
+}
+/* coding with nick */

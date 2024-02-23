@@ -1,0 +1,27 @@
+<h1 mat-dialog-title> Add Carpet Form </h1>
+<div mat-dialog-content>
+  <form [formGroup]="carpetForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="lib" matInput placeholder="Placeholder">
+      <mat-label>Carpet Lib</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="carpetsize" matInput placeholder="Placeholder">
+      <mat-label>Carpet Size</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="price" matInput placeholder="Placeholder" type="number">
+      <mat-label>Carpet Price</mat-label>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="addcarpet()">{{actionBtn}}</button>
+</div>
